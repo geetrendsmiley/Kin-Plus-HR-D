@@ -1,121 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HR</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
-      rel="stylesheet"
-    />
-    <!-- I created my branch precy -->
-  </head>
-  <body>
-    <div class="top">
-      <h3>
-        Proffyl is giving a 35% discount for startups in western africa
-        countries.
-      </h3>
-    </div>
-    <div class="body">
-    <header>
-      <nav class="navBar" id="navBar">
-        <!-- logo -->
-        <a href="index.html"><img src="images/logo.svg" alt="logo" /></a>
-
-        <!-- navigation links -->
-        <ul>
-          <li class="navList"><a href="#">Home</a></li>
-          <li class="navList"><a href="#">About</a></li>
-          <li class="navList"><a href="#">pricing</a></li>
-          <li class="navList"><a href="#">blog</a></li>
-        </ul>
-        <div>
-          <button class="btn-nav">Get started</button>
-        </div>
-      </nav>
-    </header>
-
-    <div class="main-section">
-      <!-- the left side section -->
-      <div class="left-section">
-        <h1>
-          <span class="span-h1">Reimagine your HR - </span>
-          streamline,innovate, and empower
-        </h1>
-        <p class="p-tag">
-          Our product is streamlined to manage every stage of the employee
-          lifecycle - from attracting and hiring top talent, to facilitating a
-          smooth onboarding process, and supporting efficient ongoing employee
-          managemnt - empowering organizations to focus on strategic growth
-        </p>
-
-        <div class="button-top">
-          <button class="button-top-red">Start Your free Trail</button>
-          <button>shedule a demo</button>
-        </div>
-      </div>
-      <!-- the right section -->
-      <div class="right-section">
-        <div class="image-style">
-          <img class="lady" src="images/Frame 38.png" alt="lady" />
-        </div>
-      </div>
-    </div>
-    <!-- the testimonials section -->
-    <!-- <footer> -->
-    <!-- logo1 -->
-    <!-- <div class="footerLogo"><img src="" alt="logo" /></div> -->
-    <!-- centre of the footer -->
-    <!-- <ol> -->
-    <!-- <li class="footerList"><a href="#"></a>Home</li> -->
-    <!-- <li class="footerList"><a href="#"></a>Signup</li> -->
-    <!-- <li class="footerList"><a href="#"></a>Login</li> -->
-    <!-- <li class="footerList"><a href="#"></a>Contact</li> -->
-    <!-- </ol> -->
-    <!-- right of the footer -->
-    <!-- <ul> -->
-    <!-- <li class="footerIcon">Facebook</li> -->
-    <!-- <li class="footerIcon">Twitter</li> -->
-    <!-- <li class="footerIcon">Linkedin</li> -->
-    <!-- <li class="footerIcon">Youtube</li> -->
-    <!-- </ul> -->
-    <!-- </footer> -->
-    =======
-
-    <!--the third section by precy-->
-    <section class="section3">
-      <section class="left-section3">
-        <div class="container-3">
-          <div class="hero-container">
-            <h2>Make data-driven HR decisions and drive business success</h2>
-            <p>
-              Grow your business today with our help and get it done with
-              amazing launch features, personalization, and more with uifry. We
-              help organizations like yours thrive every day and beyond.
-            </p>
-            <div class="placeholder1">
-              <h4>We are making every business grow!</h4>
-              <form class="sign-up">
-                <input type="text" placeholder="Full Name" required />
-                <input type="email" placeholder="Email Address" required />
-                <button class="btn" type="submit">Contact Now</button>
-              </form>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="regsiter">
+        <h2>Create an Account</h2>
+        <form id="registerf" action="/signup" method="post">
+            <div class="formreg">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Enter your first name"required>
             </div>
-          </div>
+            <div class="formreg">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+            </div>
+            <div class="formreg">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="formreg">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="formreg">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="formreggend">
+                <label>Gender</label>
+                <label for="genderMale"><input type="radio" id="genderMale" name="gender" value="male">Male</label>
+                <label for="genderFemale"><input type="radio" id="genderFemale" name="gender" value="female">Female</label>
+                <label for="genderOther"><input type="radio" id="genderOther" name="gender" value="other">Other</label>
+            </div>
+            <div class="formreg">
+                <label for="address">Address</label>
+                <textarea name="address" id="address" placeholder="Enter your address"></textarea>
+            </div>
+            <div class="formreg">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="formreg">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+            </div>
+            <div class="formregfile">
+                <label for="profilePicture">Profile Picture (optional)</label>
+                <input type="file" id="profilePicture" name="profilePicture" accept="image/*">
+            </div>
+            <button type="submit">Register</button>
+        </form>
+         <div class="link">
+            <p>Already have an Account? <a href="/login">Login here</a></p>
         </div>
-      </section>
-      <!--the right section by precy-->
-      <section class="img-section">
-        <img src="images/Frame 36.png" alt="" />
-      </section>
-    </section>
+        <p id="message" class="error"></p>
     </div>
-
-    >>>>>>> 360bd8863981148285747dfb95f0edf4b49e452d
-    <script src="script.js"></script>
-  </body>
-</html>
+</body>
+</html> 
