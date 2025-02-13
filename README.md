@@ -1,1 +1,1 @@
-# Kin-Plus-HR-D
+# Kin-Plus-HR
