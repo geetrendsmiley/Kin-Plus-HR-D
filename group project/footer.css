@@ -1,0 +1,31 @@
+.footerLogo{
+    display: flex;
+    
+    
+}
+.footerLogo1 {
+    display: flex;
+
+}
+
+ol {
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    gap: 50px;  
+    justify-content: center;
+    
+     
+}
+.footer-right {
+    display: flex;
+    justify-content: space-between;
+    margin:10px;
+    gap:20px
+}
+.footericon{
+    display: flex;
+    justify-content: space-between;
+    margin:10px;
+    gap:10px
+}
