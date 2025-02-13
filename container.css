@@ -1,0 +1,127 @@
+/* taiwo syle here  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+  }
+  
+  /* Main Container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Left Section (Text Content) */
+  .text-content {
+    max-width: 50%;
+  }
+  
+  .text-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #191919;
+    line-height: 1.3;
+    margin-bottom: 20px;
+  }
+  
+  .text-content p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  /* Stats Section */
+  .stats {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .stat-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+  }
+  
+  .stat-item img {
+    background: #FDECEC;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  /* Buttons */
+  .button-group {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .btn {
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .btn-primary {
+    background: #FF5722;
+    color: white;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background: #E64A19;
+  }
+  
+  .btn-secondary {
+    background: transparent;
+    color: #333;
+    border: 2px solid #FF5722;
+  }
+  
+  .btn-secondary:hover {
+    background: #FF5722;
+    color: white;
+  }
+  
+  /* Right Section (Image & Card) */
+  .image-section {
+    position: relative;
+    max-width: 50%;
+  }
+  
+  .image-section img {
+    width: 100%;
+    border-radius: 15px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    .text-content,
+    .image-section {
+        max-width: 100%;
+    }
+  
+    .stats {
+        justify-content: center;
+    }
+  
+    .button-group {
+        justify-content: center;
+    }
+  }
+  
