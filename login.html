@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WMS Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Enter Username or Email" required>
+            <input type="password" id="password" placeholder="Enter Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p><a href="#" id="forgotPassword">Forgot Password?</a></p>
+    </div>
+
+    <div class="reset-container" style="display: none;">
+        <h2>Reset Password</h2>
+        <form id="resetForm">
+            <input type="email" id="email" placeholder="Enter Active Email" required>
+            <input type="text" id="phone" placeholder="Enter Phone Number" required>
+            <input type="password" id="newPassword" placeholder="Enter New Password" required>
+            <input type="password" id="confirmPassword" placeholder="Confirm New Password" required>
+            <button type="submit">Reset Password</button>
+        </form>
+        <p><a href="#" id="backToLogin">Back to Login</a></p>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
