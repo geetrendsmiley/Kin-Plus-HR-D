@@ -168,3 +168,80 @@ section {
   width: 100%;
   border-radius: 50px;
 }
+.down-section {
+  max-width: 100%;
+}
+.down-section img {
+  width: 85%;
+  border-radius: 50px;
+}
+
+
+/* Style the placeholder1 container */
+.placeholder1 {
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Style the h4 heading */
+.placeholder1 h4 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Style the sign-up form */
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Style input fields */
+.sign-up input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+/* Style the button */
+.sign-up .btn {
+  background-color: #FAE0E1;
+  color: white;
+  padding: 12px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sign-up .btn:hover {
+  background-color: #5c5d5f;
+}
+
+/* Optional responsiveness */
+@media (max-width: 768px) {
+  .placeholder1 {
+    padding: 15px;
+  }
+
+  .placeholder1 h4 {
+    font-size: 20px;
+  }
+
+  .sign-up input {
+    font-size: 14px;
+  }
+
+  .sign-up .btn {
+    font-size: 14px;
+  }
+}
