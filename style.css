@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  overflow: hidden;
+  
   font-family: "Plus Jakarta Sans", serif;
   font-optical-sizing: auto;
   font-weight: weight;
@@ -28,7 +28,7 @@ body {
 }
 .nav-top p {
   color: #ffffff;
-  padding: 20px;
+  padding: 15px;
 }
 .logo-ul {
   display: flex;
@@ -79,14 +79,12 @@ h1 {
 .h1-span {
   color: #ff4a00;
 }
-.p-header {
-  /* width: 300px; */
-}
 .btn-started-hd {
   background-color: #ff4a00;
   border: 1px solid silver;
   width: 150px;
   height: 50px;
+  color: #ffffff;
 }
 .scheldu-btn-hd {
   background-color: white;
@@ -152,10 +150,34 @@ h1 {
 }
 .blue-box-man {
   display: flex;
+  background-color: #3C3679;
+  gap: 60px;
+  width: 1800px;
+  height: 200px;
+
+
 }
 .inner-blue-box {
   display: flex;
+  width: 1080.374267578125px;
+  height: 50px;
+  width: 65%;
+  margin: 20px;
+  padding: 20px;
+  gap:60px;
+  top:4196px;
+  left:179px;
+  justify-content: center;
+  align-items: center;
 }
+.sec-btn {
+  background-color: #ff4a00;
+  border: solid;
+  width: 150px;
+  height: 50px;
+  color: #ffffff;
+}
+
 /* login sec */
 .login-div {
   display: flex;
