@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  
   font-family: "Plus Jakarta Sans", serif;
   font-optical-sizing: auto;
   font-weight: weight;
@@ -76,6 +75,7 @@ body {
 h1 {
   width: 300px;
 }
+
 .h1-span {
   color: #ff4a00;
 }
@@ -91,12 +91,22 @@ h1 {
   border: 1px solid white;
   width: 150px;
   height: 50px;
+  font-weight: 700;
 }
 .rating {
   margin: 10px;
   display: flex;
   gap: 10px;
   padding: 10px;
+}
+.p-header{
+  width: 500px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #131126;
 }
 .img-div {
   width: 50%;
@@ -134,6 +144,7 @@ h1 {
 .p-header-tc {
   width: 200px;
   color: #131126;
+  font-weight: 300;
 }
 .main-section {
   display: flex;
@@ -145,8 +156,29 @@ h1 {
 .manWord-section {
   width: 50%;
 }
-.star-man-se {
+.h2-man-section {
+  width: 400px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #201C44;
+}
+.p-men {
+  width: 500px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #201C44;
+}
+.span-man-sec {
+font-size: 16px;
+font-weight: 700;
+line-height: 28px;
+}
+.star-man-sec {
   display: flex;
+  line-height: 28px;
 }
 .blue-box-man {
   display: flex;
@@ -173,9 +205,20 @@ h1 {
 .sec-btn {
   background-color: #ff4a00;
   border: solid;
-  width: 150px;
+  width: 165px;
   height: 50px;
   color: #ffffff;
+  padding-right: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 100%;
+  gap: 8px;
+}
+.img-men {
+  color: #FFFFFF;
 }
 
 /* login sec */
@@ -184,6 +227,23 @@ h1 {
   width: 100%;
   margin: 20px;
   padding: 20px;
+}
+.h2-login-sec {
+  font-weight: 400;
+  font-size: 28px;
+  color: #201C44;
+  width: 500px;
+  line-height: 120%;
+}
+.p-login-sec {
+  width: 500px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  color: #131126;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+
 }
 .lady-login-sec {
   margin: 20px;
@@ -201,7 +261,7 @@ h1 {
 }
 .span-login-sec {
   font-size: 20px;
-  font-weight: 600px;
+  font-weight: 800px;
 }
 .img-place-our-sec {
   display: flex;
