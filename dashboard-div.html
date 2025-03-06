@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3x3 Grid with JavaScript</title>
+  <style>
+    /* CSS styles to style the 3x3 grid */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 columns */
+      grid-template-rows: repeat(3, 1fr);    /* 3 rows */
+      gap: 10px;                            /* Gap between cells */
+      width: 300px;                         /* Width of the grid */
+      height: 300px;                        /* Height of the grid */
+      margin: 20px auto;                    /* Center grid horizontally */
+    }
+    
+    .grid-item {
+      background-color: lightblue; /* Background color of the grid items */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #000;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <script>
+    // JavaScript code to create the 3x3 grid dynamically
+
+    // Create a container div for the grid
+    const gridContainer = document.createElement('div');
+    gridContainer.classList.add('grid-container');
+
+    // Loop to create 9 grid items (3x3 = 9 items)
+    for (let i = 1; i <= 9; i++) {
+      const gridItem = document.createElement('div');
+      gridItem.classList.add('grid-item');
+      gridItem.textContent = `Item ${i}`; // Text inside each grid item
+      gridContainer.appendChild(gridItem); // Add the grid item to the container
+    }
+
+    // Append the grid container to the body of the document
+    document.body.appendChild(gridContainer);
+  </script>
+
+</body>
+</html>
