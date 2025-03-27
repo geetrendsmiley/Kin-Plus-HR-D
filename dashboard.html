@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <img src="Group 1.svg" alt="Company Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li class="active"><a class="icon" href="#"><img src="Vector.png" alt="dashboard"><i class="icon-dashboard"></i>Dashboard</a></li>
+                    <li><a class="icon" href="#"><img src="attendance.svg" alt="attendance"><i class="icon-attendance"></i> Attendance</a></li>
+                    <li><a class="icon" href="#"><img src="award.svg" alt="award"><i class="icon-award"></i> Award</a></li>
+                    <li><a class="icon" href="#"><img src="department.svg" alt="department"><i class="icon-department"></i> Department</a></li>
+                    <li><a class="icon" href="#"><img src="employee.svg" alt="employee"><i class="icon-employee"></i> Employee</a></li>
+                    <li><a class="icon" href="#"><img src="leave.svg" alt="leave"><i class="icon-leave"></i> Leave</a></li>
+                    <li><a class="icon" href="#"><img src="payroll.svg" alt="payroll"><i class="icon-payroll"></i> Payroll</a></li>
+                    <li><a class="icon" href="#"><img src="loan.svg" alt="loan"><i class="icon-loan"></i> Loan</a></li>
+                    <li><a class="icon" href="#"><img src="recruitment.svg" alt="recruitment"><i class="icon-recruitment"></i> Recruitment</a></li>
+                </ul>
+            </nav>
+            <div class="resources">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#"><img src="authentication.svg" alt="authentication"><i class="icon-authentication"></i> Authentication</a></li>
+                    <li><a href="#"><img src="documentation.svg" alt="documentation"><i class="icon-documentation"></i> Documentation</a></li>
+                    <li><a href="#"><img src="settings.svg" alt="settings"><i class="icon-settings"></i> Settings</a></li>
+                    <li><a href="#"><img src="help.svg" alt="help"><i class="icon-support"></i> Help and Support</a></li>
+                    <li><a href="#"><img src="logout.svg" alt="logout"><i class="icon-logout"></i> Log out</a></li>
+                </ul>
+            </div>        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search here...">
+                    <button>Search</button>
+                </div>
+                <div class="user-info">
+                    <div class="notifications">
+                        <i class="icon-notification"></i>
+                        <span class="notification-count">3</span>
+                    </div>
+                    <div class="user-profile">
+                        <img src="user-avatar.png" alt="Dami Lola">
+                        <span>Dami Lola</span>
+                        <i class="icon-dropdown"></i>
+                    </div>
+                </div>
+            </header>
+
+            <div class="dashboard-content">
+                <div class="quick-stats">
+                    <div class="stat-card">
+                        <h3>New Employee</h3>
+                        <div class="stat-value">60</div>
+                        <p>Analysis for last week</p>
+                        <div class="trend-line new-employee-trend"></div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Total Employee</h3>
+                        <div class="stat-value">534</div>
+                        <p>Analysis for last year</p>
+                        <div class="trend-line total-employee-trend"></div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Total salary</h3>
+                        <div class="stat-value">$35k</div>
+                        <p>Analysis for last month</p>
+                        <div class="trend-line total-salary-trend"></div>
+                    </div>
+                </div>
+
+                <div class="analytics-section">
+                    <div class="salary-stats">
+                        <h3>Salary Statistics</h3>
+                        <div class="date-selector">
+                            <span>Jan 2024 - Jan 2025</span>
+                            <i class="icon-dropdown"></i>
+                        </div>
+                        <div class="salary-chart" id="salaryChart"></div>
+                    </div>
+                    <div class="income-analysis">
+                        <h3>Income Analysis</h3>
+                        <div class="income-breakdown">
+                            <div class="income-chart" id="incomeChart"></div>
+                            <div class="income-details">
+                                <div class="income-item">
+                                    <span class="color-dev"></span>
+                                    <span>Dev</span>
+                                    <span>$30k</span>
+                                </div>
+                                <div class="income-item">
+                                    <span class="color-mark"></span>
+                                    <span>Mark</span>
+                                    <span>$40k</span>
+                                </div>
+                                <div class="income-item">
+                                    <span class="color-seo"></span>
+                                    <span>Seo</span>
+                                    <span>$45k</span>
+                                </div>
+                                <div class="income-item">
+                                    <span class="color-desi"></span>
+                                    <span>Desi</span>
+                                    <span>$70k</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
